@@ -1,0 +1,33 @@
+.searchHistory {
+    max-height: 300px;
+    overflow-y: auto;
+    width: 50%;
+    margin: 2rem 0 0 0;
+
+    ul li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: #f4f4f4;
+        font-size: 2rem;
+        line-height: 1.5;
+        opacity: 0.6;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        span {
+            color: red;
+            cursor: no-drop
+        }
+    }
+}

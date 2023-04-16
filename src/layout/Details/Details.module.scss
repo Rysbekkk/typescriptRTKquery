@@ -1,0 +1,25 @@
+// Details.module.scss
+
+.details {
+    padding: 50px 0;
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+
+        .col {
+            &:first-child {
+                margin-bottom: 30px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

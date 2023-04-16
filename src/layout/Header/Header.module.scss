@@ -1,0 +1,58 @@
+// Header.module.scss
+
+$header-padding: 20px; // define padding for header
+$header-font-color: #fff; // define font color for header
+$header-background-color: #333; // define background color for header
+$header-box-padding: 10px; // define padding for header boxes
+$header-link-active-color: #ffcd00; // define active link color
+
+.header {
+    background-color: $header-background-color;
+    color: $header-font-color;
+    padding: $header-padding;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        padding: $header-box-padding;
+        gap: 15px;
+
+    }
+
+    &__first {
+        flex: 1;
+    }
+
+    &__second {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+
+            a {
+                color: $header-font-color;
+                text-decoration: none;
+
+                &.active {
+                    color: $header-link-active-color;
+                }
+            }
+        }
+    }
+
+    &__third {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
